@@ -1,4 +1,4 @@
-# Buisiness Page - PR
+# Business Page - PR
 
 ## Describe your changes
 

@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Bubbles from "../components/Bubbles";
-
-const inter = Inter({ subsets: ["latin"] });
+import NavBar from "../components/nav/NavBar";
+import { poppins, comfortaa } from "../atoms/fonts";
 
 export const metadata: Metadata = {
   title: "KRAM Web",
@@ -17,8 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Bubbles />
+      <body className={`${poppins.variable} ${comfortaa.variable}`}>
+        <NavBar />
         {children}
       </body>
     </html>
