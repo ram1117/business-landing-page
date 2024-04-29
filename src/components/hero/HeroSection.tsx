@@ -11,13 +11,13 @@ const HeroSection = () => {
     >
       <Bubbles />
       <div className="px-4 mt-32 flex flex-col gap-4 items-center justify-center text-white z-[20] text-center">
-        <h1 className="text-3xl lg:text-4xl font-normal tracking-tight">
+        <h1 className="text-3xl lg:text-4xl font-normal tracking-tight animate-fadefrombottom animate-delay-150">
           Basic - SaaS Landing Page
         </h1>
-        <h2 className="text-3xl lg:text-4xl font-bold">
+        <h2 className="text-3xl lg:text-4xl font-bold animate-fadefrombottom animate-delay-500">
           Kickstart Your SaaS or App Site
         </h2>
-        <h3 className="my-4">
+        <h3 className="my-4 animate-fadefrombottom animate-delay-1000">
           {" "}
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor{" "}

@@ -8,7 +8,7 @@ interface NavListProps {
 const NavList = ({ className = "", onClick = null }: NavListProps) => {
   return (
     <ul
-      className={`flex gap-6 lg:flex-row flex-col items-center text-base font-medium ${className}`}
+      className={`flex gap-6 lg:flex-row flex-col items-center text-base font-normal ${className}`}
     >
       <li className="p-2">
         <Link
