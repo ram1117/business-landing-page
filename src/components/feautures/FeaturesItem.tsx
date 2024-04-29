@@ -10,6 +10,7 @@ interface FeaturesItemProps {
     icon: StaticImageData;
     href: string;
   };
+  className?: string;
 }
 
 const FeaturesItem = ({ service }: FeaturesItemProps) => {

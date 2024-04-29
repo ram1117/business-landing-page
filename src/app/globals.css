@@ -12,11 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.main-bg {
-  background: url('../../public/main-bg.svg') no-repeat;
-  background-size: cover;
-}
-
 .circles {
   position: absolute;
   top: 10vh;
@@ -32,4 +27,16 @@ html {
   list-style: none;
   background: #5076e4;
   border-radius: 100%;
+}
+
+.anim-delay-100 {
+  animation-delay: 1s;
+}
+
+.anim-delay-200 {
+  animation-delay: 2s;
+}
+
+.anim-delay-300 {
+  animation: 3s;
 }

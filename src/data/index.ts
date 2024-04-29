@@ -20,7 +20,7 @@ export const FeaturesData = [
     href: "#home",
   },
   {
-    id: 1,
+    id: 3,
     title: "Powerful",
     description:
       " Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore. ",

@@ -72,6 +72,10 @@ const config: Config = {
           "0%": { letterSpacing: "0rem" },
           "100%": { letterSpacing: "0.2rem" },
         },
+        fadein: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
       },
       animation: {
         vertical: "bottomtop 5s linear infinite",
@@ -79,10 +83,12 @@ const config: Config = {
         lefttoright: "leftright 10s linear infinite",
         slidepanel: "slideleft 500ms linear forward",
         changecolor: "colorchange 200ms linear forwards",
-        showborder: "showborder 650ms ease-in-out forwards",
+        showborder: "showborder 250ms ease-in-out forwards",
         slightspin: "slightspin 650ms linear forwards",
         expandletters: "expandletters 650ms linear forwards",
+        fadein: "fadein 1s linear forwards",
       },
+
       backgroundColor: {
         divider: "#fe7783",
       },

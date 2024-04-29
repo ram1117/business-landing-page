@@ -3,18 +3,14 @@
 import Link from "next/link";
 import NavList from "./NavList";
 import MobileMenu from "./MobileMenu";
-import { useEffect } from "react";
 import useHasScrolled from "../../hooks/useHasScrolled";
 
 const NavBar = () => {
   const hasScrolled = useHasScrolled();
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
 
   return (
     <nav
-      className={`fixed inset-x-0 top-0 flex justify-between py-4 px-6 lg:px-16 w-full z-[99] ${hasScrolled ? "text-black bg-white animate-changecolor" : "text-white"}`}
+      className={`fixed inset-x-0 top-0 flex justify-between py-4 px-6 lg:px-16 w-full z-[99] ${hasScrolled ? "text-black bg-white animate-changecolor border-b" : "text-white"}`}
       id="navbar"
     >
       <Link href="#home">
