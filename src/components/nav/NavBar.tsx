@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="absolute inset-x-0 top-0 flex justify-between py-6 px-6 lg:px-16 w-full text-white z-[99]">
       <Link href="#home">
-        <h2 className="font-comfortaa text-2xl font-bold track-wider">KRAM</h2>
+        <h2 className="font-bungee text-4xl font-bold track-wider">KRAM</h2>
       </Link>
       <div className="flex gap-6">
         <div className="lg:block hidden">

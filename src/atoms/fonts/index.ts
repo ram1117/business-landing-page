@@ -1,4 +1,4 @@
-import { Poppins, Comfortaa } from "next/font/google";
+import { Poppins, Bungee } from "next/font/google";
 
 export const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -6,8 +6,8 @@ export const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export const comfortaa = Comfortaa({
-  weight: ["300", "400", "500", "600", "700"],
+export const bungee = Bungee({
+  weight: ["400"],
   subsets: ["latin"],
-  variable: "--font-comfortaa",
+  variable: "--font-bungee",
 });

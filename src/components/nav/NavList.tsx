@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { BUTTON_STYLE } from "../../constants";
 
 interface NavListProps {
   className?: string;
@@ -8,7 +7,7 @@ interface NavListProps {
 const NavList = ({ className = "" }: NavListProps) => {
   return (
     <ul
-      className={`flex gap-6 lg:flex-row flex-col items-center text-base ${className}`}
+      className={`flex gap-6 lg:flex-row flex-col items-center text-base font-medium ${className}`}
     >
       <li className="p-2">
         <Link href="#home">Home</Link>
@@ -33,7 +32,7 @@ const NavList = ({ className = "" }: NavListProps) => {
         <Link href="#blog">Blog</Link>
       </li>
 
-      <li className={`${BUTTON_STYLE}`}>
+      <li className="text-white py-2 px-6 bg-button hover:bg-button-hover rounded-md">
         <Link href="#contact">Get Started</Link>
       </li>
     </ul>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "../components/nav/NavBar";
-import { poppins, comfortaa } from "../atoms/fonts";
+import { poppins, bungee } from "../atoms/fonts";
 
 export const metadata: Metadata = {
   title: "KRAM Web",
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${comfortaa.variable}`}>
+      <body className={`${poppins.variable} ${bungee.variable}`}>
         <NavBar />
         {children}
       </body>

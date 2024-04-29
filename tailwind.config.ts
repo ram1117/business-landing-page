@@ -19,44 +19,33 @@ const config: Config = {
       },
       fontFamily: {
         poppins: "var(--font-poppins)",
-        comfortaa: "var(--font-comfortaa)",
+        bungee: "var(--font-bungee)",
       },
       keyframes: {
         bottomtop: {
           " 0%:": {
-            transform: "translateY(-10vh)",
-            opacity: "1",
+            transform: "translateY(-5vh)",
           },
 
           "100%": {
             transform: "translateY(-25vh)",
-            opacity: "0",
           },
         },
         bottomtopright: {
           " 0%:": {
-            transform: "translateY(-10vh) translateX(0) ",
-            opacity: "1",
-          },
-          "50%": {
-            transform: "translateY(-20vh) translateX(-10vw)",
+            transform: "translateY(-5vh) translateX(0) ",
           },
           "100%": {
-            transform: "translateY(-10vh) translateX(-2vw)",
-            opacity: "0",
+            transform: "translateY(-20vh) translateX(-2vw)",
           },
         },
         leftright: {
           " 0%:": {
-            transform: "translateY(-10vh) translateX(8vw)",
-            opacity: "1",
+            transform: "translateY(-5vh) translateX(8vw)",
           },
-          "50%": {
-            transform: "translateY(-30vh) translateX(10vw)",
-          },
+
           "100%": {
-            transform: "translateY(-10vh) translateX(25vw)",
-            opacity: "0",
+            transform: "translateY(-30vh) translateX(25vw)",
           },
         },
         slideleft: {
