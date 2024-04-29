@@ -28,7 +28,7 @@ const BlogItem = ({ isIntersecting, blog }: BlogItemProps) => {
         <p>Author: Admin</p>
         <p>{blog.date}</p>
       </div>
-      <p className="text-xl mb-4">{blog.content}</p>
+      <p className="text-xl mb-4 hover:text-blue-800">{blog.content}</p>
       <Link
         href={blog.href}
         className="text-primary hover:animate-expandletters text-lg"

@@ -15,6 +15,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "main-bg": "url('/main-bg.svg')",
+        "footer-bg": "url('/footer-bg.svg')",
         button: "linear-gradient(to right, #fe8367, #fe6f98)",
         "button-hover": "linear-gradient(to right,  #fe6f98, #fe8367)",
       },
