@@ -1,8 +1,8 @@
-# Business page
+# Business/Saas landing page
 
 ## Description
 
-**Business** is a NextJS14 landing page. I used a CMS template design to create this one page landing page in NextJS. I added animations when sections scroll into view
+**Business/Saas landing page** is a NextJS14 landing page for what could be a business, a Saas product etc. I used a CMS template design to create this one page landing page in NextJS. I added animations when sections scroll into view. If you need a custom landing page for your Saas Product or your business or a product and have a design, I will be able to create NextJS web page. I took two days to complete this page
 
 Tech stack - Typescript, TailwindCSS
 
