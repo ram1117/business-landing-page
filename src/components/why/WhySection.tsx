@@ -8,7 +8,7 @@ const WhySection = () => {
 
   return (
     <section
-      className="p-4 relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24 min-h-[60vh] w-full max-w-[1224px] text-text-primary mb-[100px]"
+      className="p-4 relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24 min-h-[60vh] w-full max-w-[1224px] text-text-primary mb-[130px]"
       id="why"
       ref={containerRef}
     >

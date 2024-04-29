@@ -4,6 +4,9 @@ import ServiceImage3 from "@/public/services/services-shape-3.svg";
 import Doodle1 from "@/public/doodles/doodle1.svg";
 import Doodle2 from "@/public/doodles/doodle2.svg";
 import Doodle3 from "@/public/doodles/doodle3.svg";
+import Team1 from "@/public/doodles/team-1.png";
+import Team2 from "@/public/doodles/team-2.png";
+import Team3 from "@/public/doodles/team-3.png";
 
 export const FeaturesData = [
   {
@@ -56,5 +59,29 @@ export const AboutData = [
     image: Doodle3,
     content:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing. ",
+  },
+];
+
+export const MemberData = [
+  {
+    id: 1,
+    name: "Jane Smith",
+    title: "Founder and CEO",
+    image: Team1,
+    href: "/",
+  },
+  {
+    id: 2,
+    name: "John Doe",
+    title: "CTO",
+    image: Team2,
+    href: "/",
+  },
+  {
+    id: 3,
+    name: "Alex Smith",
+    title: "CFO",
+    image: Team3,
+    href: "/",
   },
 ];
