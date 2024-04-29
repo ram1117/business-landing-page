@@ -76,6 +76,14 @@ const config: Config = {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        fadefromleft: {
+          "0%": { opacity: "0", transform: "translateX(-15%)" },
+          "100%": { opacity: "1", transform: "translateX(0%)" },
+        },
+        fadefromright: {
+          "0%": { opacity: "0", transform: "translateX(15%)" },
+          "100%": { opacity: "1", transform: "translateX(0%)" },
+        },
       },
       animation: {
         vertical: "bottomtop 5s linear infinite",
@@ -87,6 +95,8 @@ const config: Config = {
         slightspin: "slightspin 650ms linear forwards",
         expandletters: "expandletters 650ms linear forwards",
         fadein: "fadein 1s linear forwards",
+        fadefromleft: "fadefromleft 500ms linear forwards",
+        fadefromright: "fadefromright 500ms linear forwards",
       },
 
       backgroundColor: {

@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import SectionDivider from "../../atoms/SectionDivider";
 import { FeaturesData } from "../../data";
 import FeaturesItem from "./FeaturesItem";
@@ -8,12 +7,10 @@ import useIntersection from "../../hooks/useIntersection";
 
 const FeatureSection = () => {
   const { containerRef, isIntersecting } = useIntersection({ threshold: 1 });
-  useEffect(() => {
-    console.log(isIntersecting);
-  }, [isIntersecting]);
+
   return (
     <section
-      className="relative min-h-[70vh] w-full flex flex-col items-center justify-start max-w-[1224px] text-text-primary mb-[100px]"
+      className="p-4 relative min-h-[70vh] w-full flex flex-col items-center justify-start max-w-[1224px] text-text-primary mb-[50px]"
       id="features"
       ref={containerRef}
     >
@@ -24,7 +21,7 @@ const FeatureSection = () => {
       </h2>
 
       {isIntersecting && (
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 my-28 gap-8 animate-fadein">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 my-12 gap-8 animate-fadein">
           {FeaturesData.map((item) => (
             <FeaturesItem
               service={item}

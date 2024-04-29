@@ -4,7 +4,6 @@ const useHasScrolled = () => {
   const [onScroll, setOnScroll] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
     const handleScroll = () => {
       if (window.scrollY >= OFFSET) setOnScroll(true);
       else setOnScroll(false);
