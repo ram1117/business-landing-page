@@ -2,7 +2,7 @@
 
 ## Description
 
-**Business** is a NextJS14 landing page
+**Business** is a NextJS14 landing page. I used a CMS template design to create this one page landing page in NextJS. I added animations when sections scroll into view
 
 Tech stack - Typescript, TailwindCSS
 
@@ -32,14 +32,6 @@ Tech stack - Typescript, TailwindCSS
   ```
   npm install
   ```
-
-### Environment Variables
-
-Create a `.env.local` file at the root of the project and add the following environment variables
-
-```
-
-```
 
 ### Executing program
 
@@ -75,4 +67,4 @@ This project is [MIT](./LICENSE) licensed. See the LICENSE.md file for details
 
 ## Acknowledgments
 
-N/A
+This page design is based on one of [UIDeck's free templates](https://preview.uideck.com/items/basic/)
