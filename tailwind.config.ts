@@ -60,6 +60,18 @@ const config: Config = {
           "0%": { backgroundColor: "transparent" },
           "100%": { backgroundColor: "#ffffff" },
         },
+        showborder: {
+          "0%": { boxShadow: "0 0 0 0px #ffffff" },
+          "100%": { boxShadow: "0 0 0 2px #fe7783" },
+        },
+        slightspin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(20deg)" },
+        },
+        expandletters: {
+          "0%": { letterSpacing: "0rem" },
+          "100%": { letterSpacing: "0.2rem" },
+        },
       },
       animation: {
         vertical: "bottomtop 5s linear infinite",
@@ -67,6 +79,17 @@ const config: Config = {
         lefttoright: "leftright 10s linear infinite",
         slidepanel: "slideleft 500ms linear forward",
         changecolor: "colorchange 200ms linear forwards",
+        showborder: "showborder 650ms ease-in-out forwards",
+        slightspin: "slightspin 650ms linear forwards",
+        expandletters: "expandletters 650ms linear forwards",
+      },
+      backgroundColor: {
+        divider: "#fe7783",
+      },
+      colors: {
+        primary: "#fe7783",
+        "text-primary": "#2E2E2E",
+        "text-secondary": "#6A6972",
       },
     },
   },

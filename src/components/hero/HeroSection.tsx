@@ -6,15 +6,15 @@ import Sponsors from "./Sponsors";
 const HeroSection = () => {
   return (
     <section
-      className="relative min-h-screen w-full bg-main-bg bg-no-repeat bg-cover flex flex-col items-center justify-start"
+      className="relative min-h-screen w-full bg-main-bg bg-no-repeat bg-cover flex flex-col items-center justify-start mb-[100px]"
       id="home"
     >
       <Bubbles />
       <div className="px-4 mt-32 flex flex-col gap-4 items-center justify-center text-white z-[20] text-center">
-        <h1 className="text-3xl lg:text-5xl font-normal tracking-tight">
+        <h1 className="text-3xl lg:text-4xl font-normal tracking-tight">
           Basic - SaaS Landing Page
         </h1>
-        <h2 className="text-3xl lg:text-5xl font-bold">
+        <h2 className="text-3xl lg:text-4xl font-bold">
           Kickstart Your SaaS or App Site
         </h2>
         <h3 className="my-4">

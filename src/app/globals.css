@@ -8,6 +8,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main-bg {
   background: url('../../public/main-bg.svg') no-repeat;
   background-size: cover;
