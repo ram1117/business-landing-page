@@ -7,6 +7,9 @@ import Doodle3 from "@/public/doodles/doodle3.svg";
 import Team1 from "@/public/doodles/team-1.png";
 import Team2 from "@/public/doodles/team-2.png";
 import Team3 from "@/public/doodles/team-3.png";
+import blog1 from "@/public/doodles/blog-1.jpg";
+import blog2 from "@/public/doodles/blog-2.jpg";
+import blog3 from "@/public/doodles/blog-3.jpg";
 
 export const FeaturesData = [
   {
@@ -83,5 +86,32 @@ export const MemberData = [
     title: "CFO",
     image: Team3,
     href: "/",
+  },
+];
+
+export const BlogData = [
+  {
+    id: 1,
+    content:
+      "Lorem ipsuamet conset sadips cing elitr seddiam nonu eirmod tempor invidunt labore. ",
+    date: "03 June, 2023",
+    href: "/",
+    image: blog1,
+  },
+  {
+    id: 2,
+    content:
+      "Lorem ipsuamet conset sadips cing elitr seddiam nonu eirmod tempor invidunt labore. ",
+    date: "15 Aug, 2023",
+    href: "/",
+    image: blog2,
+  },
+  {
+    id: 3,
+    content:
+      "Lorem ipsuamet conset sadips cing elitr seddiam nonu eirmod tempor invidunt labore. ",
+    date: "31 Nov,2023",
+    href: "/",
+    image: blog3,
   },
 ];

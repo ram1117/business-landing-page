@@ -1,4 +1,5 @@
 import AboutSection from "../components/about/AboutSection";
+import BlogSection from "../components/blogs/BlogSection";
 import FeatureSection from "../components/feautures/FeatureSection";
 import HeroSection from "../components/hero/HeroSection";
 import TeamSection from "../components/team/TeamSection";
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutSection />
       <WhySection />
       <TeamSection />
+      <BlogSection />
     </main>
   );
 }
