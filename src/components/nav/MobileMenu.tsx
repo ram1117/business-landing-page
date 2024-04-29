@@ -3,17 +3,23 @@
 import { useState } from "react";
 import ImageWrapper from "../../atoms/ImageWrapper";
 import MenuIcon from "@/public/icons/menu.svg";
+import MenuIconDark from "@/public/icons/menu-dark.svg";
 import CloseIcon from "@/public/icons/close-icon.svg";
 import NavList from "./NavList";
 
-const MobileMenu = () => {
+interface MobileMenuProps {
+  hasScrolled: boolean;
+}
+
+const MobileMenu = ({ hasScrolled }: MobileMenuProps) => {
   const [openMenu, setOpenMenu] = useState(false);
+  const MenuIconImage = hasScrolled ? MenuIconDark : MenuIcon;
 
   return (
     <>
       <button onClick={() => setOpenMenu((prev) => !prev)}>
         <ImageWrapper
-          src={MenuIcon}
+          src={MenuIconImage}
           alt="Menu Icon"
           containerSize="h-10 w-10"
           sizes="10vw"

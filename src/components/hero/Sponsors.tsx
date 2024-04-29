@@ -7,19 +7,21 @@ import UiDec from "@/public/sponsors/uideck.svg";
 
 const Sponsors = () => {
   return (
-    <div className="px-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 items-center my-4 w-full max-w-[1224px]">
+    <div className="px-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 items-center my-12 w-full max-w-[1224px]">
       <div className="flex items-center justify-center">
         <ImageWrapper
           src={Ayroui}
           alt="Ayroui logo"
-          containerSize="h-12 w-full grayscale hover:grayscale-0"
+          containerSize="h-6 md:h-12 w-32 grayscale hover:grayscale-0"
+          sizes="(max-width:768px) 50vw, 30vw"
         />
       </div>
       <div className="flex items-center justify-center">
         <ImageWrapper
           src={Ecommerce}
           alt="Ecommerce logo"
-          containerSize="h-12 w-full grayscale hover:grayscale-0"
+          containerSize="h-6 md:h-12 w-32 grayscale hover:grayscale-0"
+          sizes="(max-width:768px) 50vw, 30vw"
         />
       </div>
 
@@ -27,7 +29,8 @@ const Sponsors = () => {
         <ImageWrapper
           src={Graygrids}
           alt="Grayfrids logo"
-          containerSize="h-12 w-full grayscale hover:grayscale-0"
+          containerSize="h-6 md:h-12 w-32 grayscale hover:grayscale-0"
+          sizes="(max-width:768px) 50vw, 30vw"
         />
       </div>
 
@@ -35,7 +38,8 @@ const Sponsors = () => {
         <ImageWrapper
           src={LineIcons}
           alt="LineIcons logo"
-          containerSize="h-12 w-full grayscale hover:grayscale-0"
+          containerSize="h-6 md:h-12 w-32 grayscale hover:grayscale-0"
+          sizes="(max-width:768px) 50vw, 30vw"
         />
       </div>
 
@@ -43,7 +47,8 @@ const Sponsors = () => {
         <ImageWrapper
           src={UiDec}
           alt="UiDec logo"
-          containerSize="h-8 w-full grayscale hover:grayscale-0"
+          containerSize="h-4 md:h-6 w-full grayscale hover:grayscale-0"
+          sizes="(max-width:768px) 50vw, 30vw"
         />
       </div>
     </div>

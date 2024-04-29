@@ -56,12 +56,17 @@ const config: Config = {
             transform: "translateX(0%)",
           },
         },
+        colorchange: {
+          "0%": { backgroundColor: "transparent" },
+          "100%": { backgroundColor: "#ffffff" },
+        },
       },
       animation: {
         vertical: "bottomtop 5s linear infinite",
         topleft: "bottomtopright 10s linear infinite",
         lefttoright: "leftright 10s linear infinite",
         slidepanel: "slideleft 500ms linear forward",
+        changecolor: "colorchange 200ms linear forwards",
       },
     },
   },
