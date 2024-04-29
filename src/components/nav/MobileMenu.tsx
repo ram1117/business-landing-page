@@ -41,7 +41,10 @@ const MobileMenu = ({ hasScrolled }: MobileMenuProps) => {
                 sizes="10vw"
               />
             </button>
-            <NavList className="!text-black"></NavList>
+            <NavList
+              className="!text-black"
+              onClick={() => setOpenMenu((prev) => !prev)}
+            />
           </div>
         </div>
       )}
