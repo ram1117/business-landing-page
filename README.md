@@ -8,7 +8,7 @@ Tech stack - Typescript, TailwindCSS
 
 ### Live Demo
 
-[Live Demo on Vercel](TBA)
+[Live Demo on Vercel](https://business-landing-page-three.vercel.app/)
 
 ## Getting Started
 
