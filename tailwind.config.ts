@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -84,6 +85,10 @@ const config: Config = {
           "0%": { opacity: "0", transform: "translateX(15%)" },
           "100%": { opacity: "1", transform: "translateX(0%)" },
         },
+        fadefrombottom: {
+          "0%": { opacity: "0", transform: "translateY(15%)" },
+          "100%": { opacity: "1", transform: "translateY(0%)" },
+        },
       },
       animation: {
         vertical: "bottomtop 5s linear infinite",
@@ -97,6 +102,7 @@ const config: Config = {
         fadein: "fadein 1s linear forwards",
         fadefromleft: "fadefromleft 500ms linear forwards",
         fadefromright: "fadefromright 500ms linear forwards",
+        fadefrombottom: "fadefrombottom 500ms 100ms ease-in forwards",
       },
 
       backgroundColor: {
@@ -109,6 +115,17 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }: any) {
+      matchUtilities(
+        {
+          "animate-delay": (value: any) => ({
+            animationDelay: value,
+          }),
+        },
+        { values: theme("transitionDelay") },
+      );
+    }),
+  ],
 };
 export default config;
