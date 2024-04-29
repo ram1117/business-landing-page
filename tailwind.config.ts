@@ -25,7 +25,7 @@ const config: Config = {
       },
       keyframes: {
         bottomtop: {
-          " 0%:": {
+          "0%": {
             transform: "translateY(-5vh)",
           },
 
@@ -34,7 +34,7 @@ const config: Config = {
           },
         },
         bottomtopright: {
-          " 0%:": {
+          "0%": {
             transform: "translateY(-5vh) translateX(0) ",
           },
           "100%": {
@@ -42,7 +42,7 @@ const config: Config = {
           },
         },
         leftright: {
-          " 0%:": {
+          "0%": {
             transform: "translateY(-5vh) translateX(8vw)",
           },
 
@@ -51,7 +51,7 @@ const config: Config = {
           },
         },
         slideleft: {
-          " 0%:": {
+          "0%": {
             transform: "translateX(-100%)",
           },
           "100%": {
