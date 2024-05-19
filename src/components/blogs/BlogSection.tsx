@@ -1,18 +1,14 @@
-"use client";
-
 import SectionDivider from "../../atoms/SectionDivider";
-import useIntersection from "../../hooks/useIntersection";
 import { BlogData } from "../../data";
 import BlogItem from "./BlogItem";
 
 const BlogSection = () => {
-  const { containerRef, isIntersecting } = useIntersection({ threshold: 0.4 });
+  let delay = 0.2;
 
   return (
     <section
       className="p-4 relative min-h-[60vh] w-full max-w-[1224px] text-text-primary mb-[100px]"
       id="blog"
-      ref={containerRef}
     >
       <div className="w-full flex flex-col items-start">
         <SectionDivider className="" />
@@ -22,13 +18,10 @@ const BlogSection = () => {
         </h2>
       </div>
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-12">
-        {BlogData.map((item) => (
-          <BlogItem
-            isIntersecting={isIntersecting}
-            key={item.id}
-            blog={item}
-          ></BlogItem>
-        ))}
+        {BlogData.map((item) => {
+          delay += 0.25;
+          return <BlogItem key={item.id} blog={item} delay={delay}></BlogItem>;
+        })}
       </ul>
     </section>
   );

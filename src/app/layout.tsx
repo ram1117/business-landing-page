@@ -6,7 +6,7 @@ import ToTopButton from "../components/ToTopButton";
 
 export const metadata: Metadata = {
   title: "KRAM Web",
-  description: "Landing page for web developement business",
+  description: "Landing page for saas/business",
 };
 
 export default function RootLayout({

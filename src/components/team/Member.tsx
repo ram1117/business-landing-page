@@ -1,10 +1,12 @@
+"use client";
+
 import { StaticImageData } from "next/image";
 import ImageWrapper from "../../atoms/ImageWrapper";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface MemberProps {
-  className?: string;
-  isIntersecting: boolean;
+  delay: number;
   detail: {
     id: number;
     name: string;
@@ -14,12 +16,14 @@ interface MemberProps {
   };
 }
 
-const Member = ({ className = "", detail, isIntersecting }: MemberProps) => {
-  if (!isIntersecting) return <li></li>;
-
+const Member = ({ detail, delay }: MemberProps) => {
   return (
-    <li
-      className={`${className} animate-fadein w-full max-w-[300px] md:max-w-[500px] mx-auto rounded-lg flex flex-col items-center justify-center gap-4 pb-8 shadow-lg`}
+    <motion.li
+      className="w-full max-w-[300px] md:max-w-[500px] mx-auto rounded-lg flex flex-col items-center justify-center gap-4 pb-8 shadow-lg"
+      initial={{ opacity: 0, y: -100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay }}
     >
       <ImageWrapper
         src={detail.image}
@@ -33,7 +37,7 @@ const Member = ({ className = "", detail, isIntersecting }: MemberProps) => {
       </Link>
 
       <h4 className="font-sm">{detail.title}</h4>
-    </li>
+    </motion.li>
   );
 };
 
