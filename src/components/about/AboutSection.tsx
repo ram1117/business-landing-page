@@ -1,5 +1,3 @@
-"use client";
-
 import AboutGrid from "./AboutGrid";
 import { AboutData } from "../../data";
 

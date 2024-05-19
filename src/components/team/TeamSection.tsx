@@ -1,18 +1,12 @@
-"use client";
-
 import SectionDivider from "../../atoms/SectionDivider";
-import useIntersection from "../../hooks/useIntersection";
 import { MemberData } from "../../data";
 import Member from "./Member";
 
 const TeamSection = () => {
-  const { containerRef, isIntersecting } = useIntersection({ threshold: 0.4 });
-
   return (
     <section
       className="p-4 relative min-h-[60vh] w-full max-w-[1224px] text-text-primary mb-[100px]"
       id="team"
-      ref={containerRef}
     >
       <div className="w-full flex flex-col items-center">
         <SectionDivider className="" />
@@ -25,17 +19,17 @@ const TeamSection = () => {
         <Member
           detail={MemberData[0]}
           key={MemberData[0].id}
-          isIntersecting={isIntersecting}
+          delay={0}
         ></Member>
         <Member
           detail={MemberData[1]}
           key={MemberData[1].id}
-          isIntersecting={isIntersecting}
+          delay={0.3}
         ></Member>
         <Member
           detail={MemberData[2]}
           key={MemberData[2].id}
-          isIntersecting={isIntersecting}
+          delay={0.6}
         ></Member>
       </ul>
     </section>
