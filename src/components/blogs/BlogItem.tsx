@@ -1,9 +1,12 @@
+"use client";
+
 import { StaticImageData } from "next/image";
 import ImageWrapper from "../../atoms/ImageWrapper";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface BlogItemProps {
-  isIntersecting: boolean;
+  delay: number;
   blog: {
     id: number;
     content: string;
@@ -13,11 +16,14 @@ interface BlogItemProps {
   };
 }
 
-const BlogItem = ({ isIntersecting, blog }: BlogItemProps) => {
-  if (!isIntersecting) return <li></li>;
-
+const BlogItem = ({ delay, blog }: BlogItemProps) => {
   return (
-    <li className="animate-fadein ">
+    <motion.li
+      initial={{ opacity: 0, y: -40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay }}
+    >
       <ImageWrapper
         src={blog.image}
         alt="Blog image"
@@ -35,7 +41,7 @@ const BlogItem = ({ isIntersecting, blog }: BlogItemProps) => {
       >
         Read More
       </Link>
-    </li>
+    </motion.li>
   );
 };
 

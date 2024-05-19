@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import ImageWrapper from "../../atoms/ImageWrapper";
 import SectionDivider from "../../atoms/SectionDivider";

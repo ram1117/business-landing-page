@@ -68,7 +68,7 @@ const config: Config = {
         },
         slightspin: {
           "0%": { transform: "rotate(0deg)" },
-          "100%": { transform: "rotate(20deg)" },
+          "100%": { transform: "rotate(50deg)" },
         },
         expandletters: {
           "0%": { letterSpacing: "0rem" },
@@ -98,7 +98,7 @@ const config: Config = {
         slidepanel: "slideleft 500ms linear forward",
         changecolor: "colorchange 200ms linear forwards",
         showborder: "showborder 250ms ease-in-out forwards",
-        slightspin: "slightspin 650ms linear forwards",
+        slightspin: "slightspin 300ms ease-in-out forwards",
         expandletters: "expandletters 650ms linear forwards",
         fadein: "fadein 1s linear forwards",
         fadefromleft: "fadefromleft 500ms linear forwards",
